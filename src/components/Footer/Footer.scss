@@ -1,9 +1,8 @@
 @import "../../styles/global.scss";
 
 .footer-container {
-  height: 6rem;
+  height: 4rem;
   width: 100%;
-  position: absolute;
   bottom: 0;
   background-color: $primary-white;
   box-shadow: $primary-light-shadow;
@@ -13,6 +12,14 @@
   border-top: 3px solid $primary-red;
 }
 
+.footer-paragraph {
+  color: #920b46;
+}
+
 .logo-footer {
   height: 40px;
+}
+
+i {
+  color: #920b46;
 }

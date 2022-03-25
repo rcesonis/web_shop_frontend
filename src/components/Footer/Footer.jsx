@@ -9,7 +9,7 @@ export const Footer = () => {
         <img className="logo-footer" src={logo2} />
       </div>
       <div>
-        <p>Copyright 2022</p>
+        <p className="footer-paragraph">Welcome to our page!</p>
       </div>
       <div>
         <i className="lab la-facebook social-icon"></i>
