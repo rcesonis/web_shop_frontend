@@ -15,13 +15,13 @@ export const NavBar = () => {
         </div>
         <div className="menu-icons">
           <Link to="/">
-            <i class="las la-user"></i>
+            <i className="las la-user"></i>
           </Link>
           <Link to="/">
-            <i class="las la-heart"></i>
+            <i className="las la-heart"></i>
           </Link>
           <Link to="/">
-            <i class="las la-shopping-cart"></i>
+            <i className="las la-shopping-cart"></i>
           </Link>
         </div>
         <button className="hamburger">
