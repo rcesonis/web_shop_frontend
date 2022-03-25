@@ -1,5 +1,12 @@
+html,
+body,
+#root {
+  width: 100%;
+}
+
 .App {
-  text-align: center;
+  width: 100%;
+  /* text-align: center; */
 }
 
 .App-logo {
