@@ -1,0 +1,9 @@
+.star-container {
+  font-size: 2rem;
+  color: #920b46;
+  -webkit-text-stroke: 2px black;
+}
+
+.category-title {
+  font-weight: 600;
+}

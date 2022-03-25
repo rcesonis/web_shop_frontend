@@ -63,6 +63,8 @@ nav {
 }
 
 .links {
+  display: flex;
+  align-items: center;
   a {
     color: $font-color;
     font-size: 1.5rem;
@@ -122,11 +124,16 @@ li {
   }
   .links a {
     padding: 0;
-    // margin: 0.7rem 0 0.5rem 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    color: #920b46;
+    i {
+      font-size: 2rem;
+    }
   }
   .links a:hover {
     padding: 0;
     background: transparent;
+    text-decoration: underline;
+    color: #920b46;
   }
 }

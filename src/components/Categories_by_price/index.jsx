@@ -21,14 +21,14 @@ const CategoriesByPrice = ({ setFilteredShopList, shopList }) => {
   }, [shopList, checked]);
 
   return (
-    <div>
+    <div className="categories-by-price single-filter-checkbox">
       <label>
         <input
           type={"checkbox"}
           checked={checked}
           onChange={() => onChecked()}
         />
-        €0.00 - €150.00
+        <span>€0.00 - €150.00</span>
       </label>
     </div>
   );
