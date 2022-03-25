@@ -1,0 +1,159 @@
+@import "../../styles/global.scss";
+
+.product-container {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.product-photo-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 1rem;
+  padding: 3rem;
+  .large-photo {
+    width: 375px;
+    height: auto;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.product-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-title h3 {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.add-rewiev-container {
+  display: flex;
+  padding: 1rem;
+  .add-review-button {
+    border: 1px solid #1d3178;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-size: 1rem;
+    background-color: transparent;
+    padding: 0.1rem 1rem;
+    text-transform: capitalize;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #1d3178;
+    margin: 0rem 2rem;
+  }
+  .star-icons {
+    color: $review-star-filled;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .review-count {
+    display: flex;
+    font-size: 1.5rem;
+    color: $primary-dark;
+    align-items: center;
+    font-family: $primary-font;
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.price-container {
+  display: flex;
+  padding: 1rem;
+  p {
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+}
+
+.product-description-container {
+  color: #a9acc6;
+  font-weight: 600;
+  line-height: 1.8rem;
+  font-family: "Lato";
+  p {
+    text-align: justify;
+    padding: 1rem;
+  }
+}
+
+.add-to-cart-container {
+  display: flex;
+  padding: 1rem;
+}
+
+.add-to-cart-button {
+  background-color: #ff3eb2;
+  color: white;
+  border: 1px solid #ff3eb2;
+  border-radius: 13px;
+  padding: 0.5rem 1rem;
+  margin: auto;
+}
+
+.las.la-shopping-cart {
+  padding-right: 0.3rem;
+}
+
+.add-to-favorite-button {
+  background-color: white;
+  color: #1d3178;
+  border: 1px solid #1d3178;
+  border-radius: 13px;
+  padding: 0.5rem 1rem;
+  margin: auto;
+}
+
+.las.la-heart {
+  padding-right: 0.3rem;
+}
+
+.product-detail-categories-container {
+  display: flex;
+  padding: 1rem;
+  color: #1d3178;
+  font-weight: 800;
+}
+
+.product-share-container {
+  display: flex;
+  padding: 1rem;
+  color: #1d3178;
+  font-weight: 800;
+  p {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.social-icon {
+  font-size: 2rem;
+  margin: 0.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .product-container {
+    width: 70%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    margin: 0 2rem;
+  }
+}

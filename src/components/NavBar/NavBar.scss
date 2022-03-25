@@ -1,27 +1,19 @@
 @import "../../styles/global.scss";
 
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
+nav {
+  background-color: $primary-white;
+  box-shadow: $primary-light-shadow;
+  border-bottom: 3px solid $primary-red;
+}
+
+.nav-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 99;
-  background-color: $primary-white;
-  padding: 1rem 2rem;
-  border-bottom: 0.2rem solid $primary-red;
-}
-
-.logo {
-  width: 182px;
-  height: 64px;
+  padding: 1rem;
+  .logo {
+    height: 40px;
+  }
 }
 
 .hamburger {
@@ -34,19 +26,18 @@ nav {
   outline: none;
   background: none;
   cursor: pointer;
-}
-
-.hamburger span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background-color: $primary-red;
-  border-radius: 6px;
-  z-index: 1;
-  transform-origin: 0 0;
-  transition: 0.4s;
+  span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: $primary-red;
+    border-radius: 6px;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: 0.4s;
+  }
 }
 
 .hamburger:hover span:nth-child(2) {
@@ -71,41 +62,71 @@ nav {
   background-color: $primary-dark;
 }
 
-.menu {
+.links {
+  a {
+    color: $font-color;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: $transition;
+    text-decoration: none;
+  }
+  a:hover {
+    background: $primary-red;
+    color: $primary-light-shade-1;
+    padding-left: 1.5rem;
+  }
+}
+
+.menu-icons {
   display: none;
-  flex: 1 1 0%;
-  justify-content: flex-end;
-  margin: 0 -1rem;
 }
 
-.menu a {
-  color: $primary-red;
-  margin: 0 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.4s;
-  padding: 8px 16px;
-  border-radius: 99px;
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: $transition;
+}
+li {
+  padding-right: 1.5rem;
 }
 
-.menu a.is-active {
-  background-color: $primary-color;
+.show-container {
+  height: 17rem;
 }
 
-@media (min-width: 768px) {
-  .hamburger {
+// Media querries
+
+@media screen and (min-width: 768px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
     display: none;
   }
-  .menu {
-    display: block;
+  .links-container {
+    height: auto !important;
   }
-}
-
-.menu-icons i {
-  font-size: 2rem;
-  text-decoration: none;
-}
-
-.menu a:link {
-  text-decoration: none;
+  .links {
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    // margin: 0.7rem 0 0.5rem 0.5rem;
+    font-size: 1.2rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
 }

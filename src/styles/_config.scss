@@ -6,12 +6,33 @@ $primary-light: #eaded7;
 $primary-dark: #212121;
 $primary-red: #920b46;
 $font-color: #324d67;
+$light-blue: #49a6e9;
+$light-blue-2: #8bcbf9;
+$review-star-filled: Yellow;
+
+// Shadow colors
+$primary-light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$primary-light-shade-1: rgb(165, 213, 248);
+
+// Spacing and font size and etc.
+$letter-spacing: 0.1rem;
+$transition: all 0.3s linear;
 
 //Fonts
+
+$primary-font: "Lato";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Fira sans", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }

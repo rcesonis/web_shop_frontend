@@ -1,0 +1,18 @@
+@import "../../styles/global.scss";
+
+.footer-container {
+  height: 6rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: $primary-white;
+  box-shadow: $primary-light-shadow;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 3px solid $primary-red;
+}
+
+.logo-footer {
+  height: 40px;
+}
