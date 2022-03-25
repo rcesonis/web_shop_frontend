@@ -7,4 +7,9 @@
   position: relative;
   flex-flow: row nowrap;
   align-items: center;
+  color: #920b46;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
 }
