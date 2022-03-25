@@ -54,11 +54,11 @@ const CategoriesByTitle = ({ setShopList }) => {
 
   return (
     <div className="categories-by-title">
-      <h2>Categories</h2>
+      <h2 className="category-title">Categories</h2>
       {!categories
         ? "loading"
         : categories.map((category) => (
-            <div key={category.id}>
+            <div className="single-filter-checkbox" key={category.id}>
               <input
                 value={category.title}
                 type={"checkbox"}
